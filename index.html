@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management App</h1>
+
+    <h2>Add New User</h2>
+    <form id="user-form">
+      <input type="hidden" id="userId" name="userId">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="degree">Degree:</label>
+      <input type="text" id="degree" name="degree" required>
+      <label for="cgpa">CGPA:</label>
+      <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+      <button type="submit" class="btn btn-primary" id="submitButton">Add User</button>
+    </form>
+
+    <h2>User List</h2>
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Degree</th>
+          <th>CGPA</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
